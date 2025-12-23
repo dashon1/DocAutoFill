@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, height=720, initial-scale=1.0">
+    <title>DocAutofill - Ask</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root { --primary: #212121; --secondary: #616161; --accent: #8BAFD0; --bg: #FFFFFF; }
+        body { margin: 0; padding: 0; font-family: 'Inter', sans-serif; background: var(--bg); color: var(--primary); overflow: hidden; width: 1280px; height: 720px; }
+        .slide-container { padding: 60px; height: 100%; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+        
+        .accent-line { width: 80px; height: 4px; background: var(--accent); margin-bottom: 32px; }
+        .label { font-size: 24px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--secondary); margin-bottom: 24px; font-weight: 600; }
+        .big-number { font-size: 160px; font-weight: 700; color: var(--accent); line-height: 1; margin: 0 0 24px 0; letter-spacing: -0.04em; }
+        .terms { font-size: 32px; color: var(--primary); margin-bottom: 60px; }
+        
+        .milestones { display: flex; gap: 60px; }
+        .stone { text-align: center; }
+        .stone-val { font-size: 24px; font-weight: 700; display: block; margin-bottom: 8px; }
+        .stone-lbl { font-size: 16px; color: var(--secondary); }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="accent-line"></div>
+        <div class="label">Seeking Series A Investment</div>
+        <div class="big-number">$5M</div>
+        <div class="terms">Preferred Equity Round</div>
+        
+        <div class="milestones">
+            <div class="stone">
+                <span class="stone-val">18 Months</span>
+                <span class="stone-lbl">Runway</span>
+            </div>
+            <div class="stone">
+                <span class="stone-val">$2M ARR</span>
+                <span class="stone-lbl">Target Revenue</span>
+            </div>
+            <div class="stone">
+                <span class="stone-val">100+</span>
+                <span class="stone-lbl">Enterprise Customers</span>
+            </div>
+        </div>
+    </div>
+    <script> lucide.createIcons(); </script>
+</body>
+</html>

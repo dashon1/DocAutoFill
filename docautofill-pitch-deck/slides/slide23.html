@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, height=720, initial-scale=1.0">
+    <title>DocAutofill - Revenue Model</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root { --primary: #212121; --secondary: #616161; --accent: #8BAFD0; --bg: #FFFFFF; }
+        body { margin: 0; padding: 0; font-family: 'Inter', sans-serif; background: var(--bg); color: var(--primary); overflow: hidden; width: 1280px; height: 720px; }
+        .slide-container { padding: 60px; height: 100%; box-sizing: border-box; }
+        
+        .header { margin-bottom: 50px; }
+        .accent-line { width: 80px; height: 4px; background: var(--accent); margin-bottom: 24px; }
+        h2 { font-size: 48px; font-weight: 700; margin: 0; }
+        
+        .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+        .price-card { border: 1px solid #E0E0E0; border-radius: 8px; padding: 32px; display: flex; flex-direction: column; }
+        .price-card.featured { border: 2px solid var(--accent); background: #F0F7FF; }
+        
+        .plan-name { font-size: 24px; font-weight: 700; margin-bottom: 16px; }
+        .price { font-size: 32px; font-weight: 600; margin-bottom: 24px; color: var(--secondary); }
+        .price strong { color: var(--primary); font-size: 48px; }
+        
+        .features { list-style: none; padding: 0; margin: 0; font-size: 16px; line-height: 1.8; color: var(--secondary); }
+        .features li { display: flex; align-items: center; gap: 12px; }
+        .check { color: var(--accent); }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <div class="accent-line"></div>
+            <h2>Revenue Tiers</h2>
+        </div>
+        
+        <div class="pricing-grid">
+            <div class="price-card">
+                <div class="plan-name">Developer</div>
+                <div class="price"><strong>Free</strong></div>
+                <ul class="features">
+                    <li><i data-lucide="check" size="16" class="check"></i> 50 documents/mo</li>
+                    <li><i data-lucide="check" size="16" class="check"></i> Standard API Access</li>
+                    <li><i data-lucide="check" size="16" class="check"></i> Community Support</li>
+                </ul>
+            </div>
+            
+            <div class="price-card featured">
+                <div class="plan-name">Pro</div>
+                <div class="price"><strong>$49</strong> /mo</div>
+                <ul class="features">
+                    <li><i data-lucide="check" size="16" class="check"></i> 5,000 documents/mo</li>
+                    <li><i data-lucide="check" size="16" class="check"></i> AI Field Detection</li>
+                    <li><i data-lucide="check" size="16" class="check"></i> Email Support</li>
+                </ul>
+            </div>
+            
+            <div class="price-card">
+                <div class="plan-name">Enterprise</div>
+                <div class="price"><strong>Custom</strong></div>
+                <ul class="features">
+                    <li><i data-lucide="check" size="16" class="check"></i> Unlimited Volume</li>
+                    <li><i data-lucide="check" size="16" class="check"></i> SLA & SSO</li>
+                    <li><i data-lucide="check" size="16" class="check"></i> Dedicated Success Mgr</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script> lucide.createIcons(); </script>
+</body>
+</html>

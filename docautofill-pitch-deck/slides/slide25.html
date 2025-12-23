@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, height=720, initial-scale=1.0">
+    <title>DocAutofill - Growth Detail</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root { --primary: #212121; --secondary: #616161; --accent: #8BAFD0; --bg: #FFFFFF; }
+        body { margin: 0; padding: 0; font-family: 'Inter', sans-serif; background: var(--bg); color: var(--primary); overflow: hidden; width: 1280px; height: 720px; }
+        .slide-container { padding: 60px; height: 100%; box-sizing: border-box; }
+        
+        .header { margin-bottom: 50px; }
+        .accent-line { width: 80px; height: 4px; background: var(--accent); margin-bottom: 24px; }
+        h2 { font-size: 48px; font-weight: 700; margin: 0; }
+        
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th { text-align: left; padding: 20px; border-bottom: 2px solid var(--accent); color: var(--secondary); font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em; }
+        td { padding: 24px 20px; border-bottom: 1px solid #E0E0E0; font-size: 20px; font-variant-numeric: tabular-nums; }
+        tr:last-child td { border-bottom: none; }
+        .highlight { font-weight: 700; color: var(--accent); }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <div class="accent-line"></div>
+            <h2>Growth Projections</h2>
+        </div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Metric</th>
+                    <th>Year 1</th>
+                    <th>Year 2</th>
+                    <th>Year 3</th>
+                    <th>Year 4</th>
+                    <th>Year 5</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Revenue ($M)</td>
+                    <td>1.2</td>
+                    <td>3.5</td>
+                    <td>8.8</td>
+                    <td>18.5</td>
+                    <td class="highlight">32.0</td>
+                </tr>
+                <tr>
+                    <td>Active Customers</td>
+                    <td>120</td>
+                    <td>450</td>
+                    <td>1,200</td>
+                    <td>2,800</td>
+                    <td class="highlight">5,000</td>
+                </tr>
+                <tr>
+                    <td>Documents Processed</td>
+                    <td>500K</td>
+                    <td>2.5M</td>
+                    <td>10M</td>
+                    <td>35M</td>
+                    <td class="highlight">80M</td>
+                </tr>
+                <tr>
+                    <td>Gross Margin</td>
+                    <td>65%</td>
+                    <td>70%</td>
+                    <td>75%</td>
+                    <td>80%</td>
+                    <td class="highlight">82%</td>
+                </tr>
+                <tr>
+                    <td>Headcount</td>
+                    <td>12</td>
+                    <td>25</td>
+                    <td>45</td>
+                    <td>80</td>
+                    <td>120</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script> lucide.createIcons(); </script>
+</body>
+</html>

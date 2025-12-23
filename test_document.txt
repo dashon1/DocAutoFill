@@ -1,0 +1,19 @@
+Test Document for DocAutofill Upload
+
+This is a test document created to verify the document upload and processing functionality.
+
+Document Type: Test Form
+Date: 2025-12-15
+Purpose: Backend Integration Testing
+
+Sample form data:
+- Name: John Doe
+- Address: 123 Test Street
+- License Number: TEST123456
+- Expiration Date: 2026-12-15
+
+This document should be processed by the DocAutofill system to verify that:
+1. File upload works correctly
+2. Document processing initiates properly  
+3. Backend integration is functioning
+4. System can handle document storage and retrieval

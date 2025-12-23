@@ -1,0 +1,47 @@
+[
+  {
+    "query": "A professional hero banner image for a document automation application showing AI-powered document processing, modern UI elements, and clean design",
+    "image_info": {
+      "url": "https://elements-resized.envatousercontent.com/elements-cover-images/62fabb7d-f30f-4613-a03a-fb471c9d1f4a?w=1200&h=630&cf_fit=crop&q=85&format=jpeg&s=62c9436f46ec24cae0f64b1ad44035c871a381adc914fd84ae18e13a86dc417c",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 88077,
+      "width": 1200,
+      "height": 630,
+      "total_pixels": 756000,
+      "basic_score": 0.9053826130849851,
+      "file_name": "docautofill_hero_banner_0.jpg"
+    },
+    "llm_score": null
+  },
+  {
+    "query": "A professional hero banner image for a document automation application showing AI-powered document processing, modern UI elements, and clean design",
+    "image_info": {
+      "url": "https://www.shutterstock.com/image-photo/futuristic-vectorstyle-image-human-hand-600nw-2624695581.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 86930,
+      "width": 600,
+      "height": 600,
+      "total_pixels": 360000,
+      "basic_score": 0.8142393454507695,
+      "file_name": "docautofill_hero_banner_1.jpg"
+    },
+    "llm_score": null
+  },
+  {
+    "query": "A professional hero banner image for a document automation application showing AI-powered document processing, modern UI elements, and clean design",
+    "image_info": {
+      "url": "https://www.shutterstock.com/image-vector/concept-artificial-intelligence-ai-digital-600nw-2561516121.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 37059,
+      "width": 600,
+      "height": 332,
+      "total_pixels": 199200,
+      "basic_score": 0.7477730139997416,
+      "file_name": "docautofill_hero_banner_7.jpg"
+    },
+    "llm_score": null
+  }
+]

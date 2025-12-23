@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, height=720, initial-scale=1.0">
+    <title>DocAutofill - Appendix</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root { --primary: #212121; --secondary: #616161; --accent: #8BAFD0; --bg: #FFFFFF; }
+        body { margin: 0; padding: 0; font-family: 'Inter', sans-serif; background: var(--bg); color: var(--primary); overflow: hidden; width: 1280px; height: 720px; }
+        .slide-container { padding: 60px; height: 100%; box-sizing: border-box; }
+        
+        .header { margin-bottom: 40px; }
+        .accent-line { width: 80px; height: 4px; background: var(--accent); margin-bottom: 24px; }
+        h2 { font-size: 48px; font-weight: 700; margin: 0; }
+        
+        .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; }
+        .metric-group { margin-bottom: 32px; }
+        .group-title { font-size: 20px; font-weight: 700; margin-bottom: 16px; border-bottom: 1px solid #E0E0E0; padding-bottom: 8px; }
+        
+        .row { display: flex; justify-content: space-between; margin-bottom: 12px; font-size: 18px; }
+        .key { color: var(--secondary); }
+        .val { font-weight: 600; }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <div class="accent-line"></div>
+            <h2>Appendix: Unit Economics</h2>
+        </div>
+        
+        <div class="grid">
+            <div class="col">
+                <div class="metric-group">
+                    <div class="group-title">Customer Acquisition (CAC)</div>
+                    <div class="row"><span class="key">Blended CAC</span> <span class="val">$450</span></div>
+                    <div class="row"><span class="key">Organic vs Paid</span> <span class="val">60% / 40%</span></div>
+                    <div class="row"><span class="key">Payback Period</span> <span class="val">9 Months</span></div>
+                </div>
+                
+                <div class="metric-group">
+                    <div class="group-title">Lifetime Value (LTV)</div>
+                    <div class="row"><span class="key">ARPU (Pro)</span> <span class="val">$588/yr</span></div>
+                    <div class="row"><span class="key">LTV (3yr)</span> <span class="val">$1,764</span></div>
+                    <div class="row"><span class="key">LTV:CAC Ratio</span> <span class="val">3.9x</span></div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="metric-group">
+                    <div class="group-title">Retention</div>
+                    <div class="row"><span class="key">Gross Revenue Retention</span> <span class="val">92%</span></div>
+                    <div class="row"><span class="key">Net Revenue Retention</span> <span class="val">115%</span></div>
+                    <div class="row"><span class="key">Churn Rate (Annual)</span> <span class="val">8%</span></div>
+                </div>
+                
+                <div class="metric-group">
+                    <div class="group-title">Efficiency</div>
+                    <div class="row"><span class="key">Gross Margin</span> <span class="val">72%</span></div>
+                    <div class="row"><span class="key">Rule of 40</span> <span class="val">45%</span></div>
+                    <div class="row"><span class="key">Burn Multiple</span> <span class="val">1.2x</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script> lucide.createIcons(); </script>
+</body>
+</html>

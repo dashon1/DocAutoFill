@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, height=720, initial-scale=1.0">
+    <title>DocAutofill - Partnerships</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root { --primary: #212121; --secondary: #616161; --accent: #8BAFD0; --bg: #FFFFFF; }
+        body { margin: 0; padding: 0; font-family: 'Inter', sans-serif; background: var(--bg); color: var(--primary); overflow: hidden; width: 1280px; height: 720px; }
+        .slide-container { padding: 60px; height: 100%; box-sizing: border-box; }
+        
+        .header { margin-bottom: 50px; }
+        .accent-line { width: 80px; height: 4px; background: var(--accent); margin-bottom: 24px; }
+        h2 { font-size: 48px; font-weight: 700; margin: 0; }
+        
+        .partner-cats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-top: 40px; }
+        .cat { text-align: center; }
+        .cat-icon { width: 80px; height: 80px; background: #FAFAFA; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px auto; color: var(--accent); }
+        .cat-title { font-size: 24px; font-weight: 700; margin-bottom: 16px; }
+        .cat-desc { font-size: 18px; color: var(--secondary); line-height: 1.5; margin-bottom: 24px; }
+        .examples { font-size: 16px; font-weight: 600; color: var(--primary); background: #F5F5F5; padding: 12px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <div class="accent-line"></div>
+            <h2>Partnership Strategy</h2>
+        </div>
+        
+        <div class="partner-cats">
+            <div class="cat">
+                <div class="cat-icon"><i data-lucide="building-2" size="40"></i></div>
+                <div class="cat-title">GovTech Integrators</div>
+                <div class="cat-desc">Channel partners for public sector digital transformation deals.</div>
+                <div class="examples">Accenture, Deloitte</div>
+            </div>
+            
+            <div class="cat">
+                <div class="cat-icon"><i data-lucide="database" size="40"></i></div>
+                <div class="cat-title">ERP & CRM Platforms</div>
+                <div class="cat-desc">Native marketplace apps for seamless data ingestion.</div>
+                <div class="examples">Salesforce, NetSuite</div>
+            </div>
+            
+            <div class="cat">
+                <div class="cat-icon"><i data-lucide="scale" size="40"></i></div>
+                <div class="cat-title">Legal Tech</div>
+                <div class="cat-desc">Embeddable CLM components for practice management.</div>
+                <div class="examples">Clio, LegalZoom</div>
+            </div>
+        </div>
+    </div>
+    <script> lucide.createIcons(); </script>
+</body>
+</html>

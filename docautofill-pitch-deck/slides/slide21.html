@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, height=720, initial-scale=1.0">
+    <title>DocAutofill - Architecture</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root { --primary: #212121; --secondary: #616161; --accent: #8BAFD0; --bg: #FFFFFF; }
+        body { margin: 0; padding: 0; font-family: 'Inter', sans-serif; background: var(--bg); color: var(--primary); overflow: hidden; width: 1280px; height: 720px; }
+        .slide-container { padding: 60px; height: 100%; box-sizing: border-box; }
+        
+        .header { margin-bottom: 60px; }
+        .accent-line { width: 80px; height: 4px; background: var(--accent); margin-bottom: 24px; }
+        h2 { font-size: 48px; font-weight: 700; margin: 0; }
+        
+        .diagram { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-top: 40px; }
+        .node { background: #FAFAFA; border: 1px solid #E0E0E0; border-radius: 8px; padding: 24px; width: 220px; text-align: center; display: flex; flex-direction: column; align-items: center; }
+        .node-icon { margin-bottom: 16px; color: var(--accent); }
+        .node-title { font-weight: 700; font-size: 18px; margin-bottom: 8px; }
+        .node-desc { font-size: 14px; color: var(--secondary); line-height: 1.4; }
+        
+        .conn { flex: 1; height: 2px; background: #E0E0E0; position: relative; }
+        .conn::after { content: ''; position: absolute; right: 0; top: -4px; width: 0; height: 0; border-left: 8px solid #E0E0E0; border-top: 5px solid transparent; border-bottom: 5px solid transparent; }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <div class="accent-line"></div>
+            <h2>Technical Architecture</h2>
+        </div>
+        
+        <div class="diagram">
+            <div class="node">
+                <i data-lucide="server" class="node-icon" size="40"></i>
+                <div class="node-title">API Gateway</div>
+                <div class="node-desc">RESTful Endpoints & Webhooks</div>
+            </div>
+            
+            <div class="conn"></div>
+            
+            <div class="node">
+                <i data-lucide="brain-circuit" class="node-icon" size="40"></i>
+                <div class="node-title">AI Core</div>
+                <div class="node-desc">LayoutLMv3 + OCR Engine</div>
+            </div>
+            
+            <div class="conn"></div>
+            
+            <div class="node">
+                <i data-lucide="database" class="node-icon" size="40"></i>
+                <div class="node-title">Secure Data</div>
+                <div class="node-desc">Encrypted Storage (AES-256)</div>
+            </div>
+            
+            <div class="conn"></div>
+            
+            <div class="node">
+                <i data-lucide="file-check" class="node-icon" size="40"></i>
+                <div class="node-title">Output</div>
+                <div class="node-desc">Signed PDF / JSON Data</div>
+            </div>
+        </div>
+    </div>
+    <script> lucide.createIcons(); </script>
+</body>
+</html>

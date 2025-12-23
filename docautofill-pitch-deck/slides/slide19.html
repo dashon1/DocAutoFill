@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, height=720, initial-scale=1.0">
+    <title>DocAutofill - Risks</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root { --primary: #212121; --secondary: #616161; --accent: #8BAFD0; --bg: #FFFFFF; }
+        body { margin: 0; padding: 0; font-family: 'Inter', sans-serif; background: var(--bg); color: var(--primary); overflow: hidden; width: 1280px; height: 720px; }
+        .slide-container { padding: 60px; height: 100%; box-sizing: border-box; }
+        
+        .header { margin-bottom: 50px; }
+        .accent-line { width: 80px; height: 4px; background: var(--accent); margin-bottom: 24px; }
+        h2 { font-size: 48px; font-weight: 700; margin: 0; }
+        
+        .risk-table { width: 100%; border-collapse: collapse; }
+        .risk-table th { text-align: left; padding: 24px; border-bottom: 2px solid #E0E0E0; color: var(--secondary); font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; }
+        .risk-table td { padding: 32px 24px; border-bottom: 1px solid #E0E0E0; vertical-align: top; }
+        
+        .risk-title { font-size: 20px; font-weight: 600; margin-bottom: 8px; }
+        .risk-desc { font-size: 16px; color: var(--secondary); }
+        .mit-content { font-size: 18px; color: var(--primary); line-height: 1.5; display: flex; align-items: flex-start; gap: 12px; }
+        .check { color: var(--accent); margin-top: 4px; flex-shrink: 0; }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <div class="accent-line"></div>
+            <h2>Risk Mitigation</h2>
+        </div>
+        
+        <table class="risk-table">
+            <thead>
+                <tr>
+                    <th width="40%">Risk Factor</th>
+                    <th>Mitigation Strategy</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="risk-title">Data Privacy Concerns</div>
+                        <div class="risk-desc">Enterprise reluctance to process sensitive data with AI.</div>
+                    </td>
+                    <td>
+                        <div class="mit-content">
+                            <i data-lucide="shield-check" class="check" size="20"></i>
+                            <div>SOC2 Type II compliance, zero-retention policies, and on-premise deployment options for regulated sectors.</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="risk-title">Incumbent Response</div>
+                        <div class="risk-desc">DocuSign launching competing AI features.</div>
+                    </td>
+                    <td>
+                        <div class="mit-content">
+                            <i data-lucide="zap" class="check" size="20"></i>
+                            <div>Focus on "Deep API" integration and developer experience where incumbents are historically weak.</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="risk-title">Model Hallucination</div>
+                        <div class="risk-desc">AI errors in critical document fields.</div>
+                    </td>
+                    <td>
+                        <div class="mit-content">
+                            <i data-lucide="eye" class="check" size="20"></i>
+                            <div>Human-in-the-loop validation UI and confidence scoring thresholds to flag low-certainty fields.</div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script> lucide.createIcons(); </script>
+</body>
+</html>

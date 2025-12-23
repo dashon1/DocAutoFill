@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, height=720, initial-scale=1.0">
+    <title>DocAutofill - Solution</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root { --primary: #212121; --secondary: #616161; --accent: #8BAFD0; --bg: #FFFFFF; }
+        body { margin: 0; padding: 0; font-family: 'Inter', sans-serif; background: var(--bg); color: var(--primary); overflow: hidden; width: 1280px; height: 720px; }
+        .slide-container { padding: 60px; height: 100%; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+        
+        /* Template 2: Centered Statement */
+        .accent-line { width: 80px; height: 4px; background: var(--accent); margin: 0 auto 32px auto; }
+        h2 { font-size: 56px; font-weight: 700; line-height: 1.1; margin: 0 0 32px 0; letter-spacing: -0.02em; max-width: 900px; }
+        p { font-size: 28px; font-weight: 400; color: var(--secondary); line-height: 1.5; margin: 0 0 48px 0; max-width: 800px; }
+        
+        .feature-grid { display: flex; gap: 60px; justify-content: center; width: 100%; margin-top: 20px; }
+        .feature-item { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+        .icon-box { width: 80px; height: 80px; background: #F0F7FF; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 8px; }
+        .feature-label { font-size: 20px; font-weight: 600; }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="accent-line"></div>
+        <h2>AI-Native Automation,<br>Not Just Digital Paper</h2>
+        <p>We move beyond static templates to context-aware intelligence that understands documents like a human would.</p>
+        
+        <div class="feature-grid">
+            <div class="feature-item">
+                <div class="icon-box"><i data-lucide="brain-circuit" color="#8BAFD0" size="40"></i></div>
+                <div class="feature-label">Context Aware</div>
+            </div>
+            <div class="feature-item">
+                <div class="icon-box"><i data-lucide="scan-text" color="#8BAFD0" size="40"></i></div>
+                <div class="feature-label">Zero Templates</div>
+            </div>
+            <div class="feature-item">
+                <div class="icon-box"><i data-lucide="zap" color="#8BAFD0" size="40"></i></div>
+                <div class="feature-label">Instant Prefill</div>
+            </div>
+        </div>
+    </div>
+    <script> lucide.createIcons(); </script>
+</body>
+</html>

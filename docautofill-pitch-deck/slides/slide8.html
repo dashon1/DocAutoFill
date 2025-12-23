@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, height=720, initial-scale=1.0">
+    <title>DocAutofill - Target Market</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root { --primary: #212121; --secondary: #616161; --accent: #8BAFD0; --bg: #FFFFFF; }
+        body { margin: 0; padding: 0; font-family: 'Inter', sans-serif; background: var(--bg); color: var(--primary); overflow: hidden; width: 1280px; height: 720px; }
+        .slide-container { padding: 60px; height: 100%; box-sizing: border-box; }
+        
+        .header { margin-bottom: 50px; }
+        .accent-line { width: 80px; height: 4px; background: var(--accent); margin-bottom: 24px; }
+        h2 { font-size: 48px; font-weight: 700; margin: 0; }
+
+        .segments { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; height: 400px; }
+        .segment { border-top: 4px solid #E0E0E0; padding-top: 24px; display: flex; flex-direction: column; }
+        .segment.active { border-color: var(--accent); }
+        
+        .seg-title { font-size: 24px; font-weight: 700; margin-bottom: 16px; }
+        .seg-desc { font-size: 18px; color: var(--secondary); line-height: 1.5; margin-bottom: 24px; flex-grow: 1; }
+        .pain-point { font-size: 14px; background: #FAFAFA; padding: 12px; border-radius: 4px; color: var(--secondary); }
+        .pain-header { font-weight: 600; color: var(--primary); margin-bottom: 4px; display: block; }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <div class="accent-line"></div>
+            <h2>Target Segments</h2>
+        </div>
+        
+        <div class="segments">
+            <div class="segment active">
+                <div class="seg-title">Professionals</div>
+                <div class="seg-desc">Legal, Tax, and Compliance pros overwhelmed by data volume.</div>
+                <div class="pain-point">
+                    <span class="pain-header">Key Pain</span>
+                    Chronic time pressure & accuracy risk.
+                </div>
+            </div>
+            
+            <div class="segment">
+                <div class="seg-title">SMBs</div>
+                <div class="seg-desc">Small businesses hampered by paper processes & filing chaos.</div>
+                <div class="pain-point">
+                    <span class="pain-header">Key Pain</span>
+                    45% still rely on paper workflows.
+                </div>
+            </div>
+            
+            <div class="segment">
+                <div class="seg-title">Government</div>
+                <div class="seg-desc">Filers struggling with complex public forms & eligibility.</div>
+                <div class="pain-point">
+                    <span class="pain-header">Key Pain</span>
+                    Low awareness & high friction.
+                </div>
+            </div>
+            
+            <div class="segment">
+                <div class="seg-title">Individuals</div>
+                <div class="seg-desc">Everyday users facing usability issues on forms.</div>
+                <div class="pain-point">
+                    <span class="pain-header">Key Pain</span>
+                    67% abandonment rate.
+                </div>
+            </div>
+        </div>
+    </div>
+    <script> lucide.createIcons(); </script>
+</body>
+</html>

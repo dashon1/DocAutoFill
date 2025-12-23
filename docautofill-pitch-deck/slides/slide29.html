@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, height=720, initial-scale=1.0">
+    <title>DocAutofill - Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root { --primary: #212121; --secondary: #616161; --accent: #8BAFD0; --bg: #FFFFFF; }
+        body { margin: 0; padding: 0; font-family: 'Inter', sans-serif; background: var(--bg); color: var(--primary); overflow: hidden; width: 1280px; height: 720px; }
+        .slide-container { padding: 60px; height: 100%; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+        
+        .accent-line { width: 80px; height: 4px; background: var(--accent); margin-bottom: 32px; }
+        h2 { font-size: 72px; font-weight: 700; margin: 0 0 24px 0; letter-spacing: -0.03em; }
+        .sub { font-size: 28px; color: var(--secondary); margin-bottom: 60px; }
+        
+        .contact-box { background: #FAFAFA; padding: 40px 60px; border-radius: 8px; border: 1px solid #E0E0E0; display: flex; flex-direction: column; gap: 24px; }
+        .c-item { display: flex; align-items: center; gap: 16px; font-size: 24px; color: var(--primary); }
+        .c-icon { color: var(--accent); }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="accent-line"></div>
+        <h2>Thank You</h2>
+        <div class="sub">Join us in building the future of document automation.</div>
+        
+        <div class="contact-box">
+            <div class="c-item">
+                <i data-lucide="user" class="c-icon" size="28"></i>
+                Founders
+            </div>
+            <div class="c-item">
+                <i data-lucide="mail" class="c-icon" size="28"></i>
+                founders@docautofill.com
+            </div>
+            <div class="c-item">
+                <i data-lucide="globe" class="c-icon" size="28"></i>
+                docautofill.com
+            </div>
+        </div>
+    </div>
+    <script> lucide.createIcons(); </script>
+</body>
+</html>

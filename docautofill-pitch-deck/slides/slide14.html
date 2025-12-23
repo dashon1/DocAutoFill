@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, height=720, initial-scale=1.0">
+    <title>DocAutofill - Team</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root { --primary: #212121; --secondary: #616161; --accent: #8BAFD0; --bg: #FFFFFF; }
+        body { margin: 0; padding: 0; font-family: 'Inter', sans-serif; background: var(--bg); color: var(--primary); overflow: hidden; width: 1280px; height: 720px; }
+        .slide-container { padding: 60px; height: 100%; box-sizing: border-box; }
+        
+        .header { margin-bottom: 60px; }
+        .accent-line { width: 80px; height: 4px; background: var(--accent); margin-bottom: 24px; }
+        h2 { font-size: 48px; font-weight: 700; margin: 0; }
+        
+        .team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; }
+        .member { display: flex; flex-direction: column; align-items: flex-start; }
+        .photo-ph { width: 200px; height: 200px; background: #F5F5F5; border-radius: 4px; margin-bottom: 24px; display: flex; align-items: center; justify-content: center; }
+        .name { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
+        .role { font-size: 18px; color: var(--accent); margin-bottom: 12px; font-weight: 600; }
+        .bg { font-size: 16px; color: var(--secondary); }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <div class="accent-line"></div>
+            <h2>Leadership Team</h2>
+        </div>
+        
+        <div class="team-grid">
+            <div class="member">
+                <div class="photo-ph"><i data-lucide="user" size="64" color="#E0E0E0"></i></div>
+                <div class="name">Founder Name</div>
+                <div class="role">CEO & Product</div>
+                <div class="bg">Ex-Stripe, Linear<br>10y SaaS Product</div>
+            </div>
+            
+            <div class="member">
+                <div class="photo-ph"><i data-lucide="user" size="64" color="#E0E0E0"></i></div>
+                <div class="name">Co-Founder</div>
+                <div class="role">CTO</div>
+                <div class="bg">Ex-Google AI<br>PhD Comp Sci</div>
+            </div>
+            
+            <div class="member">
+                <div class="photo-ph"><i data-lucide="user" size="64" color="#E0E0E0"></i></div>
+                <div class="name">Executive</div>
+                <div class="role">Head of GTM</div>
+                <div class="bg">Ex-DocuSign Sales<br>Scaled to $100M</div>
+            </div>
+            
+            <div class="member">
+                <div class="photo-ph"><i data-lucide="user" size="64" color="#E0E0E0"></i></div>
+                <div class="name">Advisor</div>
+                <div class="role">Strategic Advisor</div>
+                <div class="bg">SaaS Board Member<br>Series B Veteran</div>
+            </div>
+        </div>
+    </div>
+    <script> lucide.createIcons(); </script>
+</body>
+</html>

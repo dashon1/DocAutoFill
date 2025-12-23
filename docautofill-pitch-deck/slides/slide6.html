@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, height=720, initial-scale=1.0">
+    <title>DocAutofill - Technology</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root { --primary: #212121; --secondary: #616161; --accent: #8BAFD0; --bg: #FFFFFF; }
+        body { margin: 0; padding: 0; font-family: 'Inter', sans-serif; background: var(--bg); color: var(--primary); overflow: hidden; width: 1280px; height: 720px; }
+        .slide-container { padding: 60px; height: 100%; box-sizing: border-box; }
+        
+        .header { margin-bottom: 60px; }
+        .accent-line { width: 80px; height: 4px; background: var(--accent); margin-bottom: 24px; }
+        h2 { font-size: 48px; font-weight: 700; margin: 0; }
+
+        .process-flow { display: flex; align-items: center; justify-content: space-between; margin-top: 80px; }
+        .step { background: #FAFAFA; border: 1px solid #E0E0E0; border-radius: 8px; padding: 32px; width: 300px; text-align: center; position: relative; }
+        .step-icon { color: var(--accent); margin-bottom: 16px; display: inline-block; }
+        h3 { font-size: 20px; font-weight: 600; margin: 0 0 12px 0; }
+        p { font-size: 16px; color: var(--secondary); margin: 0; line-height: 1.5; }
+        
+        .arrow { color: #E0E0E0; }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <div class="accent-line"></div>
+            <h2>Technical Advantage</h2>
+        </div>
+        
+        <div class="process-flow">
+            <div class="step">
+                <div class="step-icon"><i data-lucide="file-scan" size="48"></i></div>
+                <h3>Multimodal OCR</h3>
+                <p>Ingests PDF, Image, or Scan. Understands layout, tables, and visual context simultaneously.</p>
+            </div>
+            
+            <div class="arrow"><i data-lucide="arrow-right" size="48"></i></div>
+            
+            <div class="step">
+                <div class="step-icon"><i data-lucide="brain" size="48"></i></div>
+                <h3>AI Field Detection</h3>
+                <p>Generative models identify fields and requirements without templates or manual mapping.</p>
+            </div>
+            
+            <div class="arrow"><i data-lucide="arrow-right" size="48"></i></div>
+            
+            <div class="step">
+                <div class="step-icon"><i data-lucide="check-circle" size="48"></i></div>
+                <h3>Instant Output</h3>
+                <p>Returns structured JSON or pre-filled documents ready for e-signature integration.</p>
+            </div>
+        </div>
+    </div>
+    <script> lucide.createIcons(); </script>
+</body>
+</html>

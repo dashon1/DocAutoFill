@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, height=720, initial-scale=1.0">
+    <title>DocAutofill - GTM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root { --primary: #212121; --secondary: #616161; --accent: #8BAFD0; --bg: #FFFFFF; }
+        body { margin: 0; padding: 0; font-family: 'Inter', sans-serif; background: var(--bg); color: var(--primary); overflow: hidden; width: 1280px; height: 720px; }
+        .slide-container { padding: 60px; height: 100%; box-sizing: border-box; }
+        
+        .header { margin-bottom: 50px; }
+        .accent-line { width: 80px; height: 4px; background: var(--accent); margin-bottom: 24px; }
+        h2 { font-size: 48px; font-weight: 700; margin: 0; }
+        
+        .gtm-cols { display: flex; gap: 40px; }
+        .col { flex: 1; background: #FAFAFA; border: 1px solid #E0E0E0; border-radius: 8px; padding: 32px; }
+        
+        .phase { font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); font-weight: 700; margin-bottom: 16px; }
+        .strat-title { font-size: 24px; font-weight: 700; margin-bottom: 24px; }
+        .tactic { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 16px; font-size: 18px; color: var(--secondary); }
+        .tactic-icon { margin-top: 4px; color: var(--primary); }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <div class="accent-line"></div>
+            <h2>Go-to-Market Strategy</h2>
+        </div>
+        
+        <div class="gtm-cols">
+            <div class="col">
+                <div class="phase">Phase 1: Bottom Up</div>
+                <div class="strat-title">Developer & PLG</div>
+                <div class="tactic"><i data-lucide="terminal" size="20" class="tactic-icon"></i> Open API Documentation</div>
+                <div class="tactic"><i data-lucide="zap" size="20" class="tactic-icon"></i> Self-serve Free Tier</div>
+                <div class="tactic"><i data-lucide="users" size="20" class="tactic-icon"></i> Community Integrations</div>
+            </div>
+            
+            <div class="col">
+                <div class="phase">Phase 2: Expansion</div>
+                <div class="strat-title">Segment Focus</div>
+                <div class="tactic"><i data-lucide="briefcase" size="20" class="tactic-icon"></i> Legal & Tax Vertical</div>
+                <div class="tactic"><i data-lucide="building" size="20" class="tactic-icon"></i> SMB Workflow Packages</div>
+                <div class="tactic"><i data-lucide="search" size="20" class="tactic-icon"></i> SEO & Content Marketing</div>
+            </div>
+            
+            <div class="col">
+                <div class="phase">Phase 3: Scale</div>
+                <div class="strat-title">Enterprise & Gov</div>
+                <div class="tactic"><i data-lucide="shield" size="20" class="tactic-icon"></i> Compliance Partnerships</div>
+                <div class="tactic"><i data-lucide="landmark" size="20" class="tactic-icon"></i> Government Contracts</div>
+                <div class="tactic"><i data-lucide="network" size="20" class="tactic-icon"></i> ERP/CRM Ecosystems</div>
+            </div>
+        </div>
+    </div>
+    <script> lucide.createIcons(); </script>
+</body>
+</html>

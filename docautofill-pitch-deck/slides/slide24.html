@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, height=720, initial-scale=1.0">
+    <title>DocAutofill - Moat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root { --primary: #212121; --secondary: #616161; --accent: #8BAFD0; --bg: #FFFFFF; }
+        body { margin: 0; padding: 0; font-family: 'Inter', sans-serif; background: var(--bg); color: var(--primary); overflow: hidden; width: 1280px; height: 720px; }
+        .slide-container { padding: 60px; height: 100%; box-sizing: border-box; }
+        
+        .header { margin-bottom: 60px; }
+        .accent-line { width: 80px; height: 4px; background: var(--accent); margin-bottom: 24px; }
+        h2 { font-size: 48px; font-weight: 700; margin: 0; }
+        
+        .moat-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; }
+        .moat-card { background: #FAFAFA; padding: 40px; border-left: 4px solid var(--accent); }
+        .moat-title { font-size: 24px; font-weight: 700; margin-bottom: 16px; display: flex; align-items: center; gap: 12px; }
+        .moat-desc { font-size: 18px; color: var(--secondary); line-height: 1.5; }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <div class="accent-line"></div>
+            <h2>Competitive Moats</h2>
+        </div>
+        
+        <div class="moat-grid">
+            <div class="moat-card">
+                <div class="moat-title"><i data-lucide="network" size="28" color="#8BAFD0"></i> Data Network Effects</div>
+                <div class="moat-desc">Every document processed improves our field detection models, creating a flywheel of accuracy that competitors cannot easily replicate.</div>
+            </div>
+            
+            <div class="moat-card">
+                <div class="moat-title"><i data-lucide="link" size="28" color="#8BAFD0"></i> API Lock-In</div>
+                <div class="moat-desc">Deep integration into core business logic (ERP/CRM) creates high switching costs and long-term retention.</div>
+            </div>
+            
+            <div class="moat-card">
+                <div class="moat-title"><i data-lucide="shield-check" size="28" color="#8BAFD0"></i> Compliance Infrastructure</div>
+                <div class="moat-desc">Purpose-built security architecture for regulated industries creates a barrier to entry for generic AI wrappers.</div>
+            </div>
+            
+            <div class="moat-card">
+                <div class="moat-title"><i data-lucide="users" size="28" color="#8BAFD0"></i> Community Ecosystem</div>
+                <div class="moat-desc">Open-source SDKs and community-contributed templates drive organic adoption and standard-setting.</div>
+            </div>
+        </div>
+    </div>
+    <script> lucide.createIcons(); </script>
+</body>
+</html>

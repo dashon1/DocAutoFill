@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, height=720, initial-scale=1.0">
+    <title>DocAutofill - Business Model</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root { --primary: #212121; --secondary: #616161; --accent: #8BAFD0; --bg: #FFFFFF; }
+        body { margin: 0; padding: 0; font-family: 'Inter', sans-serif; background: var(--bg); color: var(--primary); overflow: hidden; width: 1280px; height: 720px; }
+        .slide-container { padding: 60px; height: 100%; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; }
+        
+        .header { text-align: center; margin-bottom: 60px; }
+        .accent-line { width: 80px; height: 4px; background: var(--accent); margin: 0 auto 24px auto; }
+        h2 { font-size: 48px; font-weight: 700; margin: 0 0 16px 0; }
+        .sub { font-size: 24px; color: var(--secondary); }
+
+        .comparison { display: flex; gap: 40px; width: 100%; justify-content: center; }
+        .model-card { flex: 1; max-width: 400px; padding: 40px; border-radius: 8px; text-align: left; }
+        
+        .old-way { background: #FAFAFA; border: 1px solid #E0E0E0; opacity: 0.7; }
+        .new-way { background: #FFFFFF; border: 2px solid var(--accent); box-shadow: 0 20px 25px -5px rgba(139, 175, 208, 0.2); transform: scale(1.05); }
+        
+        .card-label { font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 16px; font-weight: 600; color: var(--secondary); }
+        .card-price { font-size: 32px; font-weight: 700; margin-bottom: 24px; }
+        .card-list { list-style: none; padding: 0; margin: 0; }
+        .card-list li { margin-bottom: 16px; display: flex; align-items: center; gap: 12px; font-size: 18px; }
+        
+        .check { color: var(--accent); }
+        .cross { color: #E0E0E0; }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <div class="accent-line"></div>
+            <h2>Transparent, Usage-Based Pricing</h2>
+            <div class="sub">Aligning costs directly with value delivered.</div>
+        </div>
+        
+        <div class="comparison">
+            <div class="model-card old-way">
+                <div class="card-label">The Old Way (Competitors)</div>
+                <div class="card-price">Seat-Based + Caps</div>
+                <ul class="card-list">
+                    <li><i data-lucide="minus-circle" class="cross" size="20"></i> Expensive "Per User" fees</li>
+                    <li><i data-lucide="minus-circle" class="cross" size="20"></i> Restrictive envelope caps</li>
+                    <li><i data-lucide="minus-circle" class="cross" size="20"></i> Hidden overage charges</li>
+                    <li><i data-lucide="minus-circle" class="cross" size="20"></i> Complex contract lock-ins</li>
+                </ul>
+            </div>
+            
+            <div class="model-card new-way">
+                <div class="card-label">DocAutofill Model</div>
+                <div class="card-price">Pay Per Process</div>
+                <ul class="card-list">
+                    <li><i data-lucide="check-circle" class="check" size="20"></i> Unlimited Users</li>
+                    <li><i data-lucide="check-circle" class="check" size="20"></i> No Envelope Caps</li>
+                    <li><i data-lucide="check-circle" class="check" size="20"></i> Volume Discounts</li>
+                    <li><i data-lucide="check-circle" class="check" size="20"></i> predictable scaling</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script> lucide.createIcons(); </script>
+</body>
+</html>

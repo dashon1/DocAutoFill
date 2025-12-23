@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, height=720, initial-scale=1.0">
+    <title>DocAutofill - Problem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root { --primary: #212121; --secondary: #616161; --accent: #8BAFD0; --bg: #FFFFFF; }
+        body { margin: 0; padding: 0; font-family: 'Inter', sans-serif; background: var(--bg); color: var(--primary); overflow: hidden; width: 1280px; height: 720px; }
+        .slide-container { padding: 60px; height: 100%; box-sizing: border-box; display: flex; gap: 60px; }
+        
+        /* Template 2: Core Statement */
+        .text-col { flex: 0 0 40%; display: flex; flex-direction: column; justify-content: center; }
+        .visual-col { flex: 1; display: flex; align-items: center; justify-content: center; }
+        
+        .accent-line { width: 80px; height: 4px; background: var(--accent); margin-bottom: 32px; }
+        h2 { font-size: 48px; font-weight: 700; line-height: 1.2; margin: 0 0 32px 0; letter-spacing: -0.02em; }
+        p { font-size: 24px; font-weight: 400; color: var(--secondary); line-height: 1.5; margin: 0 0 24px 0; }
+        
+        .stat-box { margin-top: 40px; padding-top: 40px; border-top: 1px solid #E0E0E0; }
+        .stat-val { font-size: 48px; font-weight: 700; color: var(--accent); display: block; }
+        .stat-label { font-size: 18px; color: var(--secondary); font-weight: 500; }
+
+        .visual-wrapper { width: 100%; height: 500px; background: #FAFAFA; border: 1px solid #E0E0E0; border-radius: 8px; display: flex; align-items: center; justify-content: center; padding: 40px; box-sizing: border-box; }
+        .visual-img { max-width: 100%; max-height: 100%; filter: grayscale(100%); opacity: 0.8; }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="text-col">
+            <div class="accent-line"></div>
+            <h2>Document Chaos Costs Time & Money</h2>
+            <p>Manual data entry is the bottleneck of modern business. It leads to high abandonment rates and operational drag.</p>
+            <div class="stat-box">
+                <span class="stat-val">67%</span>
+                <span class="stat-label">Form Abandonment Rate</span>
+            </div>
+        </div>
+        <div class="visual-col">
+            <div class="visual-wrapper">
+                <img src="images/workflow_infographic.png" class="visual-img" alt="Broken Workflow">
+            </div>
+        </div>
+    </div>
+    <script> lucide.createIcons(); </script>
+</body>
+</html>
